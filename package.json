@@ -1,0 +1,14 @@
+{
+  "name": "cordova-plugin-excel-importer",
+  "version": "1.0.0",
+  "description": "This plugin provide service to convert excel file to JSON object",
+  "author": "Barkah Yusuf",
+  "license": "ISC",
+  "main": "index.js",
+  "cordova": {
+    "id": "cordova-plugin-filechooser",
+    "platforms": [
+      "android"
+    ]
+  }
+}

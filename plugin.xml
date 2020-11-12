@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin 
+    xmlns="http://www.phonegap.com/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    id="cordova-plugin-excel-importer" 
+    version="0.0.1">
+    
+    <name>Excel Importer Plugin</name>
+    <description>
+        This plugin provide service to convert excel file to JSON object.
+        Currently only available for Android
+    </description>
+    <keywords>cordova,plugin,media,excel,xls,xlsx,xlsm</keywords>
+
+    <js-module src="www/excelImporter.js" name="ExcelImporter">
+        <clobbers target="excelImporter" />
+    </js-module>
+
+    <platform name="android">
+        <framework src="net.sourceforge.jexcelapi:jxl:2.6.12" />
+        <framework src="org.apache.poi:poi:4.1.2" />
+        <framework src="org.apache.poi:poi-ooxml:4.1.2" />
+        <config-file target="res/xml/config.xml" parent="/widget">        
+            <feature name="ExcelImporter">
+                <param name="android-package" value="id.co.reston.cordova.android.ExcelImporter"/>
+            </feature> 
+        </config-file> 
+        <source-file src="src/android/ExcelImporter.java" target-dir="src/id/co/reston/cordova/android"/> 
+    </platform>
+
+</plugin>
