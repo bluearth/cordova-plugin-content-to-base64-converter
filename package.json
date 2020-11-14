@@ -5,6 +5,10 @@
   "author": "Barkah Yusuf <byusuf@reston.co.id>",
   "license": "ISC",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluearth/cordova-plugin-content-to-base64-converter.git"
+  },  
   "cordova": {
     "id": "cordova-plugin-content-to-base64-convert",
     "platforms": [
