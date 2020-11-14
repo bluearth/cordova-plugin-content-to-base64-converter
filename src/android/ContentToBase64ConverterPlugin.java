@@ -44,7 +44,7 @@ public class ContentToBase64ConverterPlugin extends CordovaPlugin {
         return false;
     }
 
-    public void chooseFile(JSONObject filter, CallbackContext callbackContext) {
+    public void chooseContent(JSONObject filter, CallbackContext callbackContext) {
         String uri_filter = filter.has(MIME) ? filter.optString(MIME) : "*/*";
 
         // type and title should be configurable
