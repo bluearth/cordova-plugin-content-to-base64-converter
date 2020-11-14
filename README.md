@@ -72,7 +72,7 @@ size of the content can be. Current value is 20MB.
 
 ## License
 
-ISC
+MIT
 
 ## Attribution
 
