@@ -2,7 +2,7 @@
 <plugin 
     xmlns="http://www.phonegap.com/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android" 
-    id="cordova-plugin-excel-importer" 
+    id="cordova-plugin-content-to-base64-converter" 
     version="0.0.1">
     
     <name>Content to Base64 converter Plugin</name>
@@ -30,7 +30,7 @@
                 <param name="android-package" value="id.co.reston.cordova.plugins.ContentToBase64ConverterPlugin"/>
             </feature> 
         </config-file> 
-        <source-file src="src/android/ContentToBase64Converter.java" target-dir="src/id/co/reston/cordova/android"/> 
+        <source-file src="src/android/ContentToBase64Converter.java" target-dir="src/id/co/reston/cordova/plugins"/> 
     </platform>
 
 </plugin>
