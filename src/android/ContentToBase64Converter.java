@@ -41,7 +41,6 @@ public class ContentToBase64ConverterPlugin extends CordovaPlugin {
             chooseContent(filters, callbackContext);
             return true;
         }
-
         return false;
     }
 
