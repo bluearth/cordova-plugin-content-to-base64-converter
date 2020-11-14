@@ -5,27 +5,32 @@
     id="cordova-plugin-excel-importer" 
     version="0.0.1">
     
-    <name>Excel Importer Plugin</name>
+    <name>Content to Base64 converter Plugin</name>
     <description>
-        This plugin provide service to convert excel file to JSON object.
-        Currently only available for Android
+        This plugin provides service to convert Content to Base64-encoded string.
+        This plugin uses native content chooser to pick the content.
+        Maximum convertable content size is defined in MAX_CONTENT_SIZE 
     </description>
-    <keywords>cordova,plugin,media,excel,xls,xlsx,xlsm</keywords>
+    <keywords>cordova,plugin,media,content,base64</keywords>
 
-    <js-module src="www/excelImporter.js" name="ExcelImporter">
-        <clobbers target="excelImporter" />
+    <js-module src="www/contentToBase64Converter.js" name="ContentToBase64Converter">
+        <clobbers target="contentToBase64Converter" />
     </js-module>
 
     <platform name="android">
-        <framework src="net.sourceforge.jexcelapi:jxl:2.6.12" />
-        <framework src="org.apache.poi:poi:4.1.2" />
-        <framework src="org.apache.poi:poi-ooxml:4.1.2" />
+        <!-- 
+            Commons codec is needed for digest function used in tests
+            Not needed in production
+        -->
+        <!--
+        <framework src="commons-codec:commons-codec:1.2" /> 
+        -->
         <config-file target="res/xml/config.xml" parent="/widget">        
-            <feature name="ExcelImporter">
-                <param name="android-package" value="id.co.reston.cordova.android.ExcelImporter"/>
+            <feature name="ContentToBase64Converter">
+                <param name="android-package" value="id.co.reston.cordova.plugins.ContentToBase64ConverterPlugin"/>
             </feature> 
         </config-file> 
-        <source-file src="src/android/ExcelImporter.java" target-dir="src/id/co/reston/cordova/android"/> 
+        <source-file src="src/android/ContentToBase64Converter.java" target-dir="src/id/co/reston/cordova/android"/> 
     </platform>
 
 </plugin>

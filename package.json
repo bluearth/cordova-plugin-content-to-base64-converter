@@ -1,12 +1,12 @@
 {
-  "name": "cordova-plugin-excel-importer",
+  "name": "cordova-plugin-content-to-base64-convert",
   "version": "1.0.0",
-  "description": "This plugin provide service to convert excel file to JSON object",
-  "author": "Barkah Yusuf",
+  "description": "This plugin provides service to convert Content to Base64-encoded string",
+  "author": "Barkah Yusuf <byusuf@reston.co.id>",
   "license": "ISC",
   "main": "index.js",
   "cordova": {
-    "id": "cordova-plugin-filechooser",
+    "id": "cordova-plugin-content-to-base64-convert",
     "platforms": [
       "android"
     ]
