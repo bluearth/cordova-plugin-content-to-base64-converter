@@ -30,7 +30,7 @@
                 <param name="android-package" value="id.co.reston.cordova.plugins.ContentToBase64ConverterPlugin"/>
             </feature> 
         </config-file> 
-        <source-file src="src/android/ContentToBase64Converter.java" target-dir="src/id/co/reston/cordova/plugins"/> 
+        <source-file src="src/android/ContentToBase64ConverterPlugin.java" target-dir="src/id/co/reston/cordova/plugins"/> 
     </platform>
 
 </plugin>
